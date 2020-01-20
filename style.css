@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../portfolio/images/backgroundpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: auto;    
+}
+
+.nav{
+    width:30vw;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    height: 6vw;
+    margin: 5px 0;
+   
+    display: inline-block;
+    background-color: black;
+    color: white;
+    line-height: 6vw;
+    text-align: center;
+    transition: 900ms;
+}
+
+a.active, .nav a:hover{
+   background-color: white;
+   color: black; 
+   width: 100%;
+}
+.a{
+    width: 80%;
+}
+.b{
+    width: 85%;
+}
+.c{
+    width: 90%;
+}
+.d{
+    width:95%;
+}
+
+
+.home{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    color: white;
+    font-family: Verdana;
+    
+}
+
+.home h1{
+
+    font-size: 2.8vw;
+    padding-right: 50px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.home h3{
+    font-size: 2vw;
+    padding:5px 0;
+    opacity: 0.6;
+}
+
+.home img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 20vw;
+    
+}
+
+.aboutus{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    color: white;
+    display: none;
+    
+}
+
+.aboutus p{
+    font-size: 1vw; 
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    line-height: 15px;
+    margin-right: 10%; 
+    margin-bottom: 4% 
+    
+}
+
+.aboutus h2{
+    font-size: 1.6vw;
+    font-family: 'Dosis', sans-serif;  
+    text-transform: uppercase;
+}
+
+.contactus{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    color: white;
+    padding: 0 60px;
+    display: none;
+
+}
+
+.inputtext{
+  width: 65%;
+  height: 65%;
+  border: 4px solid black;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 1.5vw;
+  padding: 0 10px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.inputmessage{
+    width: 65%;
+    height: 135px;
+    border:3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+  }
+
+  .submitbutton{
+      width: 130px;
+      height: 55px;
+      font-family: arial;
+      background-color: whitesmoke;
+      color: black;
+      font-size: 20px;
+      border: none; 
+      float: left;
+      clear: both;
+      margin-top: 25px;      
+  }
+
+  .guide{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    color: white;
+    display: none;
+  }
+
+  .guide p{
+    font-size: 1vw; 
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    line-height: 15px;
+    margin-right: 10%; 
+    margin-bottom: 4% 
+    }
+
+  .guide h2{
+      font-size: 1.6vw;
+      font-family: 'Dosis', sans-serif;
+      text-transform: uppercase;
+  }
+
+ 
+
+    
+
+    

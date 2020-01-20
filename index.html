@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yazid Abane </title>
+    <link rel="stylesheet" href="../portfolio/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis%7COswald%7CRoboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="nav">
+        <a class="a active" href="#">HEM</a>
+        <a class="b" href="#">OM MIG</a>
+        <a class="c" href="#">KONTAKTA MIG</a>
+        <a class="d" href="#">GUIDE</a>
+    </div> 
+    
+    
+        <div class="home">
+            <img src="../portfolio/images/me.jpg" alt="Personligt bild">
+            <h1>Yazid Abane</h1>
+            <h3>Webbutvecklare</h3>
+        </div>
+    
+   
+        <div class="aboutus">
+            <h2>Välkomna till min sida,</h2><br>
+                <p>Kommunikativ, strukturerad och med en förmåga att se sammanhang.<br> Jag funderar en del över min marginalnytta, 
+                hur kan jag och organisationen nyttja min kompetens och de delar som jag brinner för på bästa sätt.</p>
+                
+                <h2>Arbetserfarenhet:</h2>
+                <p><b>Näthandel</b> 2018-2019: Driver ibtissema.com webbplats, jag är ansvarig för design, produkt research och marknadsföring.<br>
+                 <b>Butiksägare</b> 2012-2016: Ibtissèma skönhetssalong, jag var ansvarig för inköp,marknadsföring och bokföring.</p>
+                
+                 <h2>Utbildningar:</h2>  
+                <p><b>Digital Conversion Manager:</b> skola SMHSverige, period:2018-2019.<br>
+                <b>Grafist:</b> skola Artissimo, period: 01/2005 – 06/2005.</p>
+                
+                <h2>Språk:</h2><p> <b>Svenska:</b>  Bra i tal och skrift. <b>Engelska:</b>  bra i tal och skrift. <b>Franska:</b>  flytande i tal och skrift. 
+                <b>Arabiska:</b>  flytande i tal och skrift.</p>
+                
+                <h2>Kompetenser:</h2> <p><b>Microsoft office</b>  (Word, Excel, Powerpoint),<b> Abobe  (Photoshop, Illustrator, Indesign), </b>
+            </p>
+        </div>
+        
+        <div class="contactus">
+            <div class="contactform">
+                <form action="index.html" method="post">
+                    <input type="text"  class="inputtext" value="Förnamn">
+                    <input type="text"  class="inputtext" value="Efternamn">
+                    <input type="text"  class="inputtext" value="E-mail">
+                    <textarea cols="4" rows="6" class="inputmessage">Din text...</textarea>
+                    <input type="button"  class="submitbutton" value="Skicka">
+                    
+                </form>
+
+            </div>
+        </div>
+
+        <div class="guide">
+                <h2>HTML</h2>
+                <p>HyperText Markup Language, är en öppen standard språk som ägs av ingen och man behöver inte betala för 
+                    en licens. 
+                    Den används för att bygga webbsidor, man kan placera in t.ex. texter, tabeller, bilder, videor eller audiofiler mm.  
+                    För att kunna skriva HTML behöver man ha en text editor och en webbläsare för att testa hur sidan ser ut.
+                </p>
+                <h2>CSS</h2> <p>Cascading Style Sheets, är stilmallar som tillåter både skaparen och användaren till att ändra stilmallar. 
+                    Man kan justera t.ex. färg, teckensnitt, backrunder mm. CSS har gjort programmeringen enklare då har kodningen blivit 
+                    enklare att läsa och underhålla genom att ha sin CSS kod direkt i HTML dokumentet eller genom att skapa ett CSS dokument 
+                    som kopplas till HTML och som är den mest praktiska sättet.
+                </p>
+                 <h2>JavaScript</h2> 
+                 <p>JS, är ett scriptspråk som skrivs direkt i HTML oftast längst ner i dokumentet och gör att man kan 
+                    skapa mer avancerade interaktiva sidor, med hjälp av JS kan man t.ex. skapa popup-fönster, rollover, dropdown menyer mm.
+                </p>
+                 <h2>Element</h2> 
+                 <p>är en hel kodsnutt från starttag till sluttag och ska innehålla content inuti, 
+                    t.ex. html innehåll /html , body innehåll /body  p innehåll /p.
+                </p> 
+                 <h2> CSS-ruleset</h2>
+                 <p> består av en selector och en declaration som i sin tur kan innehålla flera propertys och values,  
+                    t.ex. h1 {color: black; font-siza: 11px;}.
+                        
+                </p>
+        </div>
+
+
+   <script  src="../portfolio/jquery-3.3.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('a').click(function(){
+             
+             var selected = $(this); 
+             $('a').removeClass('active');
+             $(selected).addClass('active');
+            });
+            var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $d = $('.d'),
+            $home = $('.home');
+            $aboutus = $('.aboutus');
+            $contactus = $('.contactus');
+            $guide = $('.guide');
+
+            $a.click(function(){
+                $home.fadeIn();
+                $aboutus.fadeOut();
+                $contactus.fadeOut();
+                $guide.fadeOut();
+            });
+            $b.click(function(){
+                $aboutus.fadeIn();
+                $home.fadeOut();
+                $contactus.fadeOut();
+                $guide.fadeOut();
+            });
+            $c.click(function(){
+                $contactus.fadeIn();
+                $home.fadeOut();
+                $aboutus.fadeOut();
+                $guide.fadeOut();
+            });
+            $d.click(function(){
+                $guide.fadeIn();
+                $contactus.fadeOut();
+                $home.fadeOut();
+                $aboutus.fadeOut();
+                
+            });
+                
+            
+        });
+    </script>
+    </body>
+    </html>
+
+    
